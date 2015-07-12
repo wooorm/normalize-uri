@@ -17,6 +17,34 @@ and for AMD, CommonJS, and globals ([uncompressed](normalize-uri.js) and
 
 ## Usage
 
+Dependencies.
+
+```javascript
+var normalizeURI = require('normalize-uri');
+```
+
+Normalize:
+
+```javascript
+var a = normalizeURI('foo bar');
+var b = normalizeURI('foo%20bar');
+var c = normalizeURI('👌');
+```
+
+Yields:
+
+```text
+foo%20bar
+```
+
+```text
+foo%20bar
+```
+
+```text
+%F0%9F%91%8C
+```
+
 ## API
 
 ### normalizeURI(value)
