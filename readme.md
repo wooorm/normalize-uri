@@ -19,7 +19,7 @@ and for AMD, CommonJS, and globals ([uncompressed](normalize-uri.js) and
 
 ## API
 
-### trimLines(value)
+### normalizeURI(value)
 
 Normalize `uri`. This only works when both `encodeURI` and `decodeURI` are
 available, and when decoding/encoding fails, just returns `uri`.
