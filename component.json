@@ -1,0 +1,16 @@
+{
+  "name": "normalize-uri",
+  "version": "0.0.0",
+  "description": "Decode/encode a value",
+  "license": "MIT",
+  "keywords": [
+    "normalize",
+    "decode",
+    "encode",
+    "uri"
+  ],
+  "repository": "wooorm/normalize-uri",
+  "scripts": [
+    "index.js"
+  ]
+}
