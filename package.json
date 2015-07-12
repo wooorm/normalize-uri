@@ -45,7 +45,6 @@
     "build-md": "mdast . LICENSE --output --quiet",
     "build-bundle": "browserify index.js --bare -s normalizeURI > normalize-uri.js",
     "postbuild-bundle": "esmangle normalize-uri.js > normalize-uri.min.js",
-    "build": "npm run build-md && npm run build-bundle",
-    "prepublish": "npm run build"
+    "build": "npm run build-md && npm run build-bundle"
   }
 }

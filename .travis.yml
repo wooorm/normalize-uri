@@ -7,10 +7,3 @@ node_js:
 - iojs
 sudo: false
 after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
-deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: dRVVua0VA9mgkoCzBI4SBtCMonxxPC/E1ykaEYp7wnadatzloYeH1YFumS3EsH2KeYQNYpUSlBzgpa/4pk7JznQKgS5dX9ZhtVorG6WFWIoJMSiMqKzy4jyslfYETZ2HLBVAkT2LbG1WnkUFzZJavAQEDrojPDL91/9xrpuZqst56dxwEIq/jRiLxEXrWYUr3sykJRfoTx6lZ2IRE3KRrvn3ecpluxj9txwYrh+zzCIKDictEOYkLlRU6YSwbwFpyX3QUTJvKtVoemRfVRXNNCYvKYd44zWAV2Q+oNj1OvgMXZAwN1zdLTdpiT8MqA8OETndwlFXDVk1toPFaB4Qe0uUZcRQ7je8QdGT4FCT5xFUUZz0rkecfJH2MlYuyR1urZKSYIZYuGUlL6u3HTctW0U/GPIrxaedI/RHx3ycsJMrdT1K3XEtmr0o2QAauQnkCBxJIJI++btANCWwv1U+pZuS2k+dp/4rGoOTnLyPPvtPT/6vPSmEm9exyZxQ6hVt1FE721oq2ViDZLw0rXG/aGI78K7ERn9Qiygqifl03ew/mHWIe0vtQFpO06anL89MtcwJU4DKOryPgYUHc9vjieKY0lgcgvkz8g8iFdy3xib+eNpOrvuBGXPjI30QRunV28JVygUSKO1wtz0ah4DuZNmB8EBfcHxLcnJ0LWDB3Iw=
-  on:
-    repo: wooorm/normalize-uri
