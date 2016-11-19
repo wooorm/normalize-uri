@@ -22,12 +22,9 @@
     "browserify": "^10.0.0",
     "esmangle": "^1.0.0",
     "istanbul": "^0.3.0",
-    "mdast": "^0.26.0",
-    "mdast-github": "^0.3.1",
-    "mdast-lint": "^0.4.1",
-    "mdast-usage": "^0.3.0",
-    "mdast-yaml-config": "^0.2.0",
     "mocha": "^2.0.0",
+    "remark-cli": "^2.1.0",
+    "remark-preset-wooorm": "^1.0.0",
     "xo": "^0.17.1"
   },
   "scripts": {
@@ -38,7 +35,7 @@
     "test": "npm run test-api",
     "lint": "xo",
     "make": "npm run lint && npm run test-coverage",
-    "build-md": "mdast . LICENSE --output --quiet",
+    "build-md": "remark . --output --quiet --frail",
     "build-bundle": "browserify index.js --bare -s normalizeURI > normalize-uri.js",
     "postbuild-bundle": "esmangle normalize-uri.js > normalize-uri.min.js",
     "build": "npm run build-md && npm run build-bundle"
@@ -48,5 +45,8 @@
     "ignore": [
       "nlcst-is-literal.js"
     ]
+  },
+  "remarkConfig": {
+    "presets": "wooorm"
   }
 }
