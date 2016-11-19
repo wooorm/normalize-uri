@@ -15,8 +15,8 @@ deploy:
     api_key:
       secure: hbUI6JCoGcIrI6pwScl+ljJ3YJIEJ+X9QJv9+OvcVG19AyEONdUslPQha/waI5pvwkFwLOnACu9qvPBZrIQX3zuAn45Oapm5xnLDHLFgzgU9EvQITL9HVI0mBtWLF3yubqP1UL8OVgffD6Cr4zkqSCQeKIegVxLWLg+4sZ1oW/NvzX7CrdnU8DMtn//zwRpI5TL+9GVSDzkq+6k3A9Ltdr2tJnXzlvng4tAxyo/LgY4bZ3vscqxvtCWCk6KsMwaW26WSh1NghOmqN/qSttHEEbLisgH8RMP4QA8tFzxb2qjGaIHQwluilCL+6934ak6aPLSg8zdMCctYerkIFWbmdOty4REiEDXNTMlQmxkWAsB53bQpSbCny7YfSIiG9xann+if9Bu0zzrV8bslMCjBzZFi+QL3gTFzZ/8S6ZQ0d+9064t4JUAEQJpfYW8nL0ZXGtt77aSuavzTm8j0795+//9/zXH65Ajl/mjSC97k5aCOcj5jKK23IbxBj9p4nxJh3F7tMObpTcJL160j0lT6eARtJbHbApvi0L2w6LD5dMLK71yymOjH9VibR5sgJ1PanI1oQikEOSJpiqbmu72n1j0KQ/caF5K6sOfk6ziMc97V2XzEcwwl9/r0Z9aQxuDgcGZaiU1J2fmKZuLEw1CVMrmeu5EgIOE0EtDPYrnxk6M=
     file:
-      - "normalize.uri.js"
-      - "normalize.uri.min.js"
+      - "normalize-uri.js"
+      - "normalize-uri.min.js"
     on:
       tags: true
       node: '7.0'
