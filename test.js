@@ -1,19 +1,15 @@
 'use strict';
 
-/* eslint-env mocha */
-
-var assert = require('assert');
+var test = require('tape');
 var normalizeURI = require('./');
 
-describe('normalizeURI(value)', function () {
-  it('should coerce to string', function () {
-    assert.equal(normalizeURI(true), 'true');
-  });
+test('normalizeURI(value)', function (t) {
+  t.equal(normalizeURI(true), 'true', 'should coerce to string');
 
-  it('should work', function () {
-    assert.equal(normalizeURI('foo'), 'foo');
-    assert.equal(normalizeURI('foo bar'), 'foo%20bar');
-    assert.equal(normalizeURI('foo%20bar'), 'foo%20bar');
-    assert.equal(normalizeURI('👌'), '%F0%9F%91%8C');
-  });
+  t.equal(normalizeURI('foo'), 'foo', 'should work (1)');
+  t.equal(normalizeURI('foo bar'), 'foo%20bar', 'should work (2)');
+  t.equal(normalizeURI('foo%20bar'), 'foo%20bar', 'should work (3)');
+  t.equal(normalizeURI('👌'), '%F0%9F%91%8C', 'should work (4)');
+
+  t.end();
 });

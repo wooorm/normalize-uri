@@ -1,19 +1,18 @@
 'use strict';
 
-module.exports = normalize;
+module.exports = returner;
 
 try {
   normalize('');
-} catch (err) {
-  module.exports = returner;
-}
+  module.exports = normalize;
+} catch (err) {}
 
 /* Normalize `uri`. */
 function normalize(uri) {
   return encodeURI(decodeURI(uri));
 }
 
-/* Return input. */
+/* istanbul ignore next - Fallback, return input. */
 function returner(uri) {
   return uri;
 }
