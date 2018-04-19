@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var normalizeURI = require('./');
+var normalizeURI = require('.');
 
 test('normalizeURI(value)', function (t) {
   t.equal(normalizeURI(true), 'true', 'should coerce to string');
