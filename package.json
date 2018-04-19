@@ -9,7 +9,7 @@
     "encode",
     "uri"
   ],
-  "repository": "https://github.com/wooorm/normalize-uri",
+  "repository": "wooorm/normalize-uri",
   "bugs": "https://github.com/wooorm/normalize-uri/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
