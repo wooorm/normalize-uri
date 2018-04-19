@@ -4,19 +4,12 @@ node_js:
 - '8.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: lTSHG2aaaACiJhzVhbh6n3qz3Yr7dhhmIVAizB0b3YL0Nmq+bWc/zp6NRsH7Kszgczg1+JquuoWPnFa7QDNuwIr8zEnR18MZwB2wIzNX9fX+m8kqLTXpXIlLQo6Ul/7Y4cDsC1rUVKs0kQG3jIuABn5kqtXcL879UdzQKTlUDgWeMuLpmaxSrBXTSWlji9HFavZvyg2uBFc1y3qsc8z77wx0LUiVM7XI0HVhaSRC9NA1/KxzK4vAIUTcbFSu9k3vb7HSLycoAZMa+ZHkp107sso9rvMslDtZqXA09CBwDDTXgKWqNtn/+G87pI20Z911/TD36X8F+FrLBQ/NTh1Qpx5EZKv5jo0LcEGOsIjeuGIOK4B03v6A9Fq30BWbhwktPaXMSJQ5urPLecJTiXPphR5lDOyUsFwMMyJVMMGHQmLLPECbK1gkp2EYXc3hjLywjfdnkxu2Ue1v5qyZrkl6Zu3NQZW9LaCSb4CSZyfKOxqB0PaMiV7OLS9nSBYoDLQ3keLLCR/vnCo2JLI5Re0P5RN1TPumN+dwhyK+PNKTXFmbupQGcg7BcOOXKT+fjcuJpt5S21M6MwdcKzd4+RALs7i2mwIIEzElPAdg4Zvsjmp8GA1oPXuUZgIaY6PKoMoO/QF96eeeLK71jseCDcYgCVU4ntWz6S0E8snTw4hRJ1o=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    api_key:
-      secure: hbUI6JCoGcIrI6pwScl+ljJ3YJIEJ+X9QJv9+OvcVG19AyEONdUslPQha/waI5pvwkFwLOnACu9qvPBZrIQX3zuAn45Oapm5xnLDHLFgzgU9EvQITL9HVI0mBtWLF3yubqP1UL8OVgffD6Cr4zkqSCQeKIegVxLWLg+4sZ1oW/NvzX7CrdnU8DMtn//zwRpI5TL+9GVSDzkq+6k3A9Ltdr2tJnXzlvng4tAxyo/LgY4bZ3vscqxvtCWCk6KsMwaW26WSh1NghOmqN/qSttHEEbLisgH8RMP4QA8tFzxb2qjGaIHQwluilCL+6934ak6aPLSg8zdMCctYerkIFWbmdOty4REiEDXNTMlQmxkWAsB53bQpSbCny7YfSIiG9xann+if9Bu0zzrV8bslMCjBzZFi+QL3gTFzZ/8S6ZQ0d+9064t4JUAEQJpfYW8nL0ZXGtt77aSuavzTm8j0795+//9/zXH65Ajl/mjSC97k5aCOcj5jKK23IbxBj9p4nxJh3F7tMObpTcJL160j0lT6eARtJbHbApvi0L2w6LD5dMLK71yymOjH9VibR5sgJ1PanI1oQikEOSJpiqbmu72n1j0KQ/caF5K6sOfk6ziMc97V2XzEcwwl9/r0Z9aQxuDgcGZaiU1J2fmKZuLEw1CVMrmeu5EgIOE0EtDPYrnxk6M=
-    file:
-      - "normalize-uri.js"
-      - "normalize-uri.min.js"
-    on:
-      tags: true
-      node: '8.0'
+  provider: releases
+  api_key:
+    secure: hbUI6JCoGcIrI6pwScl+ljJ3YJIEJ+X9QJv9+OvcVG19AyEONdUslPQha/waI5pvwkFwLOnACu9qvPBZrIQX3zuAn45Oapm5xnLDHLFgzgU9EvQITL9HVI0mBtWLF3yubqP1UL8OVgffD6Cr4zkqSCQeKIegVxLWLg+4sZ1oW/NvzX7CrdnU8DMtn//zwRpI5TL+9GVSDzkq+6k3A9Ltdr2tJnXzlvng4tAxyo/LgY4bZ3vscqxvtCWCk6KsMwaW26WSh1NghOmqN/qSttHEEbLisgH8RMP4QA8tFzxb2qjGaIHQwluilCL+6934ak6aPLSg8zdMCctYerkIFWbmdOty4REiEDXNTMlQmxkWAsB53bQpSbCny7YfSIiG9xann+if9Bu0zzrV8bslMCjBzZFi+QL3gTFzZ/8S6ZQ0d+9064t4JUAEQJpfYW8nL0ZXGtt77aSuavzTm8j0795+//9/zXH65Ajl/mjSC97k5aCOcj5jKK23IbxBj9p4nxJh3F7tMObpTcJL160j0lT6eARtJbHbApvi0L2w6LD5dMLK71yymOjH9VibR5sgJ1PanI1oQikEOSJpiqbmu72n1j0KQ/caF5K6sOfk6ziMc97V2XzEcwwl9/r0Z9aQxuDgcGZaiU1J2fmKZuLEw1CVMrmeu5EgIOE0EtDPYrnxk6M=
+  file:
+    - "normalize-uri.js"
+    - "normalize-uri.min.js"
+  on:
+    tags: true
+    node: '8.0'
