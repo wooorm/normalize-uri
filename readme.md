@@ -13,11 +13,11 @@ npm install normalize-uri
 ## Usage
 
 ```javascript
-var normalizeURI = require('normalize-uri');
+var normalizeURI = require('normalize-uri')
 
-normalizeURI('foo bar'); //=> 'foo%20bar'
-normalizeURI('foo%20bar'); //=> 'foo%20bar'
-normalizeURI('👌'); //=> '%F0%9F%91%8C'
+normalizeURI('foo bar') // => 'foo%20bar'
+normalizeURI('foo%20bar') // => 'foo%20bar'
+normalizeURI('👌') // => '%F0%9F%91%8C'
 ```
 
 ## API
