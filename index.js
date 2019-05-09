@@ -7,7 +7,7 @@ try {
   module.exports = normalize
 } catch (error) {}
 
-/* Normalize `uri`. */
+// Normalize `uri`.
 function normalize(uri) {
   return encodeURI(decodeURI(uri))
 }
