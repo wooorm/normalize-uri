@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: HDXSX5c6RZ3UxLIzKQf08obzA9Kt2UD6oiR6oDwc3GRVCeyEmqUSoRsRFqmxH5iRHtma9v7Ps/4Kv6s/5hMOxxcboz0nffhCc0UOpkqN2vZlOvSEGQITxvckQ6v3PFGhWilPAfhLn39qm8SAdDMKCPKc31/XONuV79o77MOkHtrABW71tluhJspPLxqVFW5Ddv/nEH4aIO7EbwTzdXQxzRSQhCIcCsNy76IGxxEEVj3kUcWiIX7PbviErjWGwW7tKFbQ4fLRnhFeZxmZzm2f/SJ+bLUhsYFUGILq4jW5dP6lligV28sfAL11tUaqaFHW61TaXHyg/MYgOcSJQqlkqvPebFV710vAePuZIbBSwMjtqZuceyKr0q5M563sEPtqkFeGzJvWN89qjnHB1zcBNNdCacNzhfwqjoEo+tdTrX04jYe//AF0iIHawJLbAZcCi4pm4+Go3luh5ST4UsIX3rtdx2C3idQX/4En/PVV1Xa8YEoQBTUvlm9LdOK/T6VqY+hsLSmujLUwxFO34HPpojVkUfRaTpb9FyNlAoO2Fz+HY9t/qDy9P/NzGu8lrcfsioTPLkNGlBn/kvtLxteziBVDLtr9hpl/dATZ+6/2kDZHeKkpZmedJZLSkA0RZIVe/nWP7Uo3VigXaQ9cntSmbk0sPO6kqEt+OjBQny5+aSs=
+    secure: klNBtEJJJLyWZsezF3ey6NsckH9DbpCLITL0sRbKHpcnjYbnWh8zQahGtbmfjCFfCGuqu6BB1AEEyw/rKYplRzBWXkPTYBKwpfYA4H2YTaMlkhI3og6Lpfh1KIw5HaAJLPSXpJN6bJv9qsi9KUlhs5bBinw9rxJrMDIBWhFSt2fa3XhEZUkuGKAg7+wjZX1s6SEMdxZCeADQwx9+xROzrnR0km3cq8yvnJqcM9rfT/nYC7E/FTwOLUoSKfQybtOSX6I/qSe4cf5+K7MqBEw2gafz4z7IkUpTMuWk8tBuwA5x1/iTzmW8aYCHnmY+9pChIHT8oSvvPP3XTdPCT+7hUAOBssFlbHXfRVtw4NOprW1gYKlI3hs0UVUptDq0KfGY94v+He6nN/oSlGgUc1A9C4B7e7LEY6V6JRwKzpH8YtXB/5TnCShsIvTQazxxbnIz0dVSrxaoB9SDkHICALASUtkwg65qE+QBV5dXYAIMJUVQxwFmUX1G/FCoGSxsVxT4shQBF3LyEqhfifu4O35EuDgtsOpfGcvjHjg7yiy56iO1nUbwKqjQyMuPp2vybJIotXTVoTgv1XZW9dPXIc1mRN3vK9E1FyJuQJF0WuyHst3e+mkW4A3Q7XHXB77Ax0wLWpLSGRT3CnY02wPgJDfIAfrGYPNbzyynYG5bia0ZYC0=
   file:
-    - "normalize-uri.js"
-    - "normalize-uri.min.js"
+    - 'normalize-uri.js'
+    - 'normalize-uri.min.js'
   on:
     tags: true
