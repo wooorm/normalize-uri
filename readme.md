@@ -1,4 +1,9 @@
-# normalize-uri [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# normalize-uri
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Normalize a URI.
 
@@ -33,13 +38,21 @@ available.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/normalize-uri.svg
+[build-badge]: https://img.shields.io/travis/wooorm/normalize-uri.svg
 
-[travis]: https://travis-ci.org/wooorm/normalize-uri
+[build]: https://travis-ci.org/wooorm/normalize-uri
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/normalize-uri.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/normalize-uri.svg
 
-[codecov]: https://codecov.io/github/wooorm/normalize-uri
+[coverage]: https://codecov.io/github/wooorm/normalize-uri
+
+[downloads-badge]: https://img.shields.io/npm/dm/normalize-uri.svg
+
+[downloads]: https://www.npmjs.com/package/normalize-uri
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/normalize-uri.svg
+
+[size]: https://bundlephobia.com/result?p=normalize-uri
 
 [npm]: https://docs.npmjs.com/cli/install
 
