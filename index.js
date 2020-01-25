@@ -5,7 +5,7 @@ module.exports = identity
 try {
   normalize('')
   module.exports = normalize
-} catch (error) {}
+} catch (_) {}
 
 // Normalize `uri`.
 function normalize(uri) {
