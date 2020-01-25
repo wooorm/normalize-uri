@@ -7,17 +7,17 @@
 
 Normalize a URI.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install normalize-uri
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var normalizeURI = require('normalize-uri')
 
 normalizeURI('foo bar') // => 'foo%20bar'
@@ -29,8 +29,8 @@ normalizeURI('👌') // => '%F0%9F%91%8C'
 
 ### `normalizeURI(value)`
 
-Normalize `uri`.  This only works when both `encodeURI` and `decodeURI` are
-available.
+Normalize `uri`.
+This only works when both `encodeURI` and `decodeURI` are available.
 
 ## License
 
