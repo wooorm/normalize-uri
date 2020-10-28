@@ -3,7 +3,7 @@
 var test = require('tape')
 var normalizeURI = require('.')
 
-test('normalizeURI(value)', function(t) {
+test('normalizeURI(value)', function (t) {
   t.equal(normalizeURI(true), 'true', 'should coerce to string')
 
   t.equal(normalizeURI('foo'), 'foo', 'should work (1)')
