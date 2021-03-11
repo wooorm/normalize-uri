@@ -1,18 +1,21 @@
-'use strict'
-
-module.exports = identity
+var implementation = identity
 
 try {
   normalize('')
-  module.exports = normalize
+  implementation = normalize
+  /* c8 ignore next */
 } catch (_) {}
+
+export function normalizeUri(value) {
+  return implementation(value)
+}
 
 // Normalize `uri`.
 function normalize(uri) {
   return encodeURI(decodeURI(uri))
 }
 
-/* istanbul ignore next - Fallback, return input. */
+/* c8 ignore next 3 */
 function identity(uri) {
   return uri
 }

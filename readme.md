@@ -9,6 +9,9 @@ Normalize a URI.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,16 +21,19 @@ npm install normalize-uri
 ## Use
 
 ```js
-var normalizeURI = require('normalize-uri')
+import {normalizeUri} from 'normalize-uri'
 
-normalizeURI('foo bar') // => 'foo%20bar'
-normalizeURI('foo%20bar') // => 'foo%20bar'
-normalizeURI('👌') // => '%F0%9F%91%8C'
+normalizeUri('foo bar') // => 'foo%20bar'
+normalizeUri('foo%20bar') // => 'foo%20bar'
+normalizeUri('👌') // => '%F0%9F%91%8C'
 ```
 
 ## API
 
-### `normalizeURI(value)`
+This package exports the following identifiers: `normalizeUri`.
+There is no default export.
+
+### `normalizeUri(value)`
 
 Normalize `uri`.
 This only works when both `encodeURI` and `decodeURI` are available.

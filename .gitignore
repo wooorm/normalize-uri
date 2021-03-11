@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-normalize-uri.js
-normalize-uri.min.js
 yarn.lock
