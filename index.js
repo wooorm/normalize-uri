@@ -6,6 +6,12 @@ try {
   /* c8 ignore next */
 } catch (_) {}
 
+/**
+ * Normalize `value`.
+ *
+ * @param {string} value URI
+ * @returns {string} Normalized URI
+ */
 export function normalizeUri(value) {
   return implementation(value)
 }

@@ -2,6 +2,7 @@ import test from 'tape'
 import {normalizeUri} from './index.js'
 
 test('normalizeUri(value)', function (t) {
+  // @ts-ignore runtime
   t.equal(normalizeUri(true), 'true', 'should coerce to string')
 
   t.equal(normalizeUri('foo'), 'foo', 'should work (1)')
