@@ -38,9 +38,9 @@ This only works when both `encodeURI` and `decodeURI` are available.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/normalize-uri.svg
+[build-badge]: https://github.com/wooorm/normalize-uri/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/normalize-uri
+[build]: https://github.com/wooorm/normalize-uri/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/normalize-uri.svg
 
