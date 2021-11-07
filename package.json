@@ -1,7 +1,7 @@
 {
   "name": "normalize-uri",
   "version": "2.0.0",
-  "description": "Decode/encode a value",
+  "description": "Legacy package to normalize an URI",
   "license": "MIT",
   "keywords": [
     "normalize",

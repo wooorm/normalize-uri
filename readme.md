@@ -1,42 +1,15 @@
 # normalize-uri
 
-[![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
-[![Size][size-badge]][size]
+**Stability: Legacy**.
+This package is no longer recommended for use.
+It’s still covered by semantic-versioning guarantees and not yet deprecated,
+but use of this package should be avoided.
+Please use [`micromark-util-sanitize-uri`][micromark-util-sanitize-uri], which
+is a much better way to solve the same problems.
 
-Normalize a URI.
-
-## Install
-
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
-
-```sh
-npm install normalize-uri
-```
-
-## Use
-
-```js
-import {normalizeUri} from 'normalize-uri'
-
-normalizeUri('foo bar') // => 'foo%20bar'
-normalizeUri('foo%20bar') // => 'foo%20bar'
-normalizeUri('👌') // => '%F0%9F%91%8C'
-```
-
-## API
-
-This package exports the following identifiers: `normalizeUri`.
-There is no default export.
-
-### `normalizeUri(value)`
-
-Normalize `uri`.
-This only works when both `encodeURI` and `decodeURI` are available.
+Legacy [documentation for this
+package](https://github.com/wooorm/normalize-uri/tree/eb1d0d6)
+is still available in Git.
 
 ## License
 
@@ -44,24 +17,8 @@ This only works when both `encodeURI` and `decodeURI` are available.
 
 <!-- Definitions -->
 
-[build-badge]: https://github.com/wooorm/normalize-uri/workflows/main/badge.svg
-
-[build]: https://github.com/wooorm/normalize-uri/actions
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/normalize-uri.svg
-
-[coverage]: https://codecov.io/github/wooorm/normalize-uri
-
-[downloads-badge]: https://img.shields.io/npm/dm/normalize-uri.svg
-
-[downloads]: https://www.npmjs.com/package/normalize-uri
-
-[size-badge]: https://img.shields.io/bundlephobia/minzip/normalize-uri.svg
-
-[size]: https://bundlephobia.com/result?p=normalize-uri
-
-[npm]: https://docs.npmjs.com/cli/install
-
 [license]: license
 
 [author]: https://wooorm.com
+
+[micromark-util-sanitize-uri]: https://github.com/micromark/micromark/tree/main/packages/micromark-util-sanitize-uri
