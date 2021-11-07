@@ -1,10 +1,10 @@
-var implementation = identity
+let implementation = identity
 
 try {
   normalize('')
   implementation = normalize
   /* c8 ignore next */
-} catch (_) {}
+} catch {}
 
 /**
  * Normalize `value`.

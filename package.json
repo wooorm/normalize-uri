@@ -56,12 +56,7 @@
     "trailingComma": "none"
   },
   "xo": {
-    "prettier": true,
-    "rules": {
-      "unicorn/prefer-optional-catch-binding": "off",
-      "no-var": "off",
-      "prefer-arrow-callback": "off"
-    }
+    "prettier": true
   },
   "remarkConfig": {
     "plugins": [
