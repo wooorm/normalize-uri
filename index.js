@@ -16,12 +16,23 @@ export function normalizeUri(value) {
   return implementation(value)
 }
 
-// Normalize `uri`.
-function normalize(uri) {
-  return encodeURI(decodeURI(uri))
+/**
+ * Normalize `value`.
+ *
+ * @param {string} value URI
+ * @returns {string} Normalized URI
+ */
+function normalize(value) {
+  return encodeURI(decodeURI(value))
 }
 
-/* c8 ignore next 3 */
-function identity(uri) {
-  return uri
+/* c8 ignore next 9 */
+/**
+ * Normalize `value`.
+ *
+ * @param {string} value URI
+ * @returns {string} Normalized URI
+ */
+function identity(value) {
+  return value
 }
