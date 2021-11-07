@@ -1,6 +1,6 @@
 {
   "name": "normalize-uri",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Legacy package to normalize an URI",
   "license": "MIT",
   "keywords": [
